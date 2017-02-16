@@ -1,0 +1,495 @@
+@font-face {
+    font-family: FLTLight;
+    src: url("/fonts/FrutigerLTW20-45Light.woff");
+}    
+    
+@font-face {
+    font-family: FLTBlack;
+    src: url("/fonts/FrutigerLTW20-75Black.woff");
+}    
+
+@font-face {
+    font-family: FLTRoman;
+    src: url("/fonts/FrutigerLTW20-55Roman.woff");
+}    
+
+@font-face {
+    font-family: FLTBold;
+    src: url("/fonts/FrutigerLTW2065Bold.woff");
+}    
+
+/*Main CSS properties*/
+h1 {font-size: 30px; font-weight: bold; line-height: 1.5em; font-family: FLTLight; color: black;}
+h2 {font-size: 28px; font-weight: bold; line-height: 1.5em; font-family: FLTLight; color: black;}
+h3 {font-size: 26px; font-weight: bold; line-height: 1.5em; font-family: FLTLight; color: black;}
+h4 {font-size: 24px; font-weight: bold; line-height: 1.5em; font-family: FLTLight; color: black;}
+h5 {font-size: 22px; font-weight: bold; line-height: 1.5em; font-family: FLTLight; color: black;}
+h6 {font-size: 20px; font-weight: bold; line-height: 1.5em; font-family: FLTLight; color: black;}
+p, body, td, div {font-size: 20px; font-weight: 400;  line-height: 1.8em; font-family: FLTLight; color: black;}
+input, select {font-size: 20px; font-weight: 600;  line-height: 1em; font-family: FLTLight; color: black;}
+a {color: black;}
+
+@media (min-resolution: 150dpi) {
+  h1 {font-size: 50px; font-weight: bold; line-height: 1.5em; font-family: FLTLight; color: black;}
+  h2 {font-size: 48px; font-weight: bold; line-height: 1.5em; font-family: FLTLight; color: black;}
+  h3 {font-size: 46px; font-weight: bold; line-height: 1.5em; font-family: FLTLight; color: black;}
+  h4 {font-size: 44px; font-weight: bold; line-height: 1.5em; font-family: FLTLight; color: black;}
+  h5 {font-size: 42px; font-weight: bold; line-height: 1.5em; font-family: FLTLight; color: black;}
+  h6 {font-size: 40px; font-weight: bold; line-height: 1.5em; font-family: FLTLight; color: black;}
+  p, body, td, div {font-size: 40px; font-weight: 400; line-height: 1.5em; font-family: FLTLight; color: black;}
+  input, select {font-size: 40px; font-weight: 600; line-height: 1em; font-family: FLTLight; color: black;}
+  a {color: black;}
+}
+
+
+body {
+    background-image: url("/images/bg.jpg");
+}
+
+/*Standard Link*/
+a:link {text-decoration: none; }
+a:visited {text-decoration: none; }
+a:active {text-decoration: none; }
+a:hover {text-decoration: underline; }
+
+span.highlight{
+    color: darkred;
+    font-weight: bolder;
+}
+
+span.smalltext {
+    font-size: 0.8em;
+}
+
+/*Website Head Area*/
+div.headarea {
+    background-color: #842222;
+    border-radius: 0.5em;
+    display: table;
+    width: 100%;
+}
+
+div.headlogo {
+display: table-cell;
+width: 1px;
+}
+
+div.headlogo img {
+    display: block;
+    padding-right: 0.5em;
+    height: 7em;
+}
+
+div.headbody {
+    display: table-cell;
+    width: auto;
+    vertical-align: top;
+}
+
+div.headbody a {
+    color: white;
+}
+
+div.headtitle {
+    text-align: right;
+    padding-top: 0.5em;
+}
+
+div.headmenu {
+    text-align: left;
+    padding: 0.5em;
+} 
+
+@media (min-resolution: 150dpi){
+    div.headarea {
+        background-color: #842222;
+        border-radius: 0em;
+        display: table;
+        margin: 0em;
+        width: 100%;
+    }
+    
+    div.headlogo {
+        display: table-cell;
+        padding: 0.2em;
+        width: 2em;
+    }
+
+    div.headlogo img {
+        display: block;
+        width: 2em;
+        height: 2em;
+        padding: 0em;
+        margin: 0em;
+    }
+
+    div.headbody {
+        display: table-cell;
+        padding: 0em;
+        margin: 0em;
+        width: auto;
+        vertical-align: top;
+    }
+
+    div.headbody a {
+        color: white;
+    }
+
+    div.headtitle {
+        vertical-align: central;
+        padding: 0em 0.2em 0em 0em;
+        margin: 0em;
+    }
+
+    div.headtitle h1{
+        padding: 0em;
+        margin: 0em;
+    }
+
+    div.headmenu {
+        display: none;
+    } 
+    
+    div.mobilemenu {
+        display: inline-block;
+        float: left;
+        padding: 0em;
+        margin: 0em;
+    }
+    
+    div.mobilemenu img{
+        display: block;
+        height: 2em;
+        padding: 0em;
+        margin: 0em;
+    }
+    
+    div.menubody {
+        display: none;
+        position: fixed;
+        background-color: #842222;
+    }
+    
+    div.menuitem {
+        height: 3em;
+        padding: 0.2em 1em 0.2em 1em;
+    }
+    
+    div.menuitem a {
+        color: white;
+    }
+}
+
+/*Main Bar*/
+div.mainbar {
+    text-align: center;
+    padding: 0.3em;
+}
+
+div.mainbarsection {
+    display: inline-block;
+    padding: 0em;
+    margin: 0em;
+    vertical-align: central;
+    min-width: 5em;
+}
+
+div.mainbarsection h1{
+    padding: 0px;
+    margin: 0px;
+}
+
+/*Input fieldsr*/
+
+input, select {
+    background-color: rgba(255,255,255,0.4);
+    border: 1px solid #BBB;
+    border-radius: 0.2em;
+    margin: 0px;
+    padding: 0em 0.5em 0em 0.5em;
+}
+
+@media (min-resolution: 150dpi){    
+    input, select {
+        font-size: 1em;
+    }
+}
+
+input[type=text] {
+    height: 2em;
+    width: 8em;
+}
+
+input[type=submit], input[type=button] {
+    height: 2em;
+}
+
+select::-ms-expand
+{
+    display: none;
+    border: none;
+}
+
+/*Hack to detect chrome and fix select height issue*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    select {
+        height: 2em;
+    }
+}
+
+/*Main Area*/
+
+div.mainarea {
+    background-color: rgba(255,255,255,0.4);
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid #EEE;
+}
+
+/*Main Area - Box */
+
+div.boxitem {
+    -webkit-box-shadow: -2px 2px 3px #AAB; 
+    -moz-box-shadow: -2px 2px 3px #AAB; 
+    box-shadow: -2px 2px 3px #AAB; 
+    height: 5em; 
+    border:1px solid #BBB; 
+    padding:0.2em; 
+    margin: 0.2em; 
+    background-color: rgba(255,255,255,0.4);
+    text-align: right;
+}
+
+div.boxitem {
+    display:block;
+} 
+
+@media (max-resolution: 149dpi){
+    div.boxitem {
+        display:inline-block;
+        width: 18em; 
+    } 
+}
+
+div.boxitem td {
+    padding: 0em;
+    margin: 0em;
+}
+
+div.boxitem img {
+    height: 4.4em;
+}
+
+div.boxitem h2 {
+    padding: 0em;
+    margin: 0em;
+    font-size: 1.1em;
+}
+
+/*Main Area - Small Box */
+
+div.smallboxitem {
+    display:inline-block;
+    width: 10em; 
+    height: 3em; 
+    border:1px solid #BBB; 
+    padding:0.2em; 
+    margin: 0.2em; 
+    background-color: rgba(255,255,255,0.4);
+}
+
+div.smallboxitem td {
+    padding: 0em;
+    margin: 0em;
+}
+
+div.smallboxitem img {
+    height: 2.5em;
+    margin-left: 0.5em; 
+}
+
+div.smallboxitem h2 {
+    padding: 0em;
+    margin: 0em;
+    font-size: 1em;
+}
+
+/*Main Area - Comment*/
+
+div.fullscreen {
+    position: fixed;
+    left: 0px;
+    top:0px;
+    width:100%;
+    height: 100%;
+    background-color: transparent;
+    display: none;
+}
+
+a.comment {
+    color: darkred;
+}
+
+div.commentmsg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -20vh;
+    margin-left: -35vw;
+    padding: 1em;
+    width: 60vw;
+    background-color: rgba(255,255,255,0.9);
+    -webkit-box-shadow: -2px 2px 3px #AAB; 
+    -moz-box-shadow: -2px 2px 3px #AAB; 
+    box-shadow: -2px 2px 3px #AAB;
+    border: 3px solid darkred;
+    height:40vh;
+    overflow:scroll;
+    overflow-x:hidden;
+    overflow-y: auto;
+    text-align:justify; 
+}
+
+div.commentmsg::-webkit-scrollbar {
+    width: 1em;
+}
+
+div.commentmsg::-webkit-scrollbar-button {
+    background: #ccc
+}
+
+div.commentmsg::-webkit-scrollbar-track-piece {
+    background: #888
+}
+
+div.commentmsg::-webkit-scrollbar-thumb {
+    background: #eee
+}
+
+/*Main Area - Page Navigator*/
+
+div.pagenavigator {
+    text-align: center;
+}
+
+@media only screen and (max-width: 40em) {
+    #firstimg, #lastimg {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 30em) {
+    #nextimg, #previousimg {
+        display: none;
+    }
+}
+
+div.pagenavigator img {
+    height: 3em;
+}
+
+div.pagenavigatorselectdiv {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 0.40em;
+}
+
+/*Main Area - Page Area*/
+
+div.pagearea {
+    text-align:justify;
+}
+
+div.pagearea p{
+    background-color: rgba(255,255,255,0.3);
+}
+
+div.pagearea h1{color:darkred; background-color: rgba(225,225,225,0.3); padding: 10px;}
+div.pagearea h2{color:darkred; background-color: rgba(225,225,225,0.3); padding: 10px;}
+div.pagearea h3{color:darkred; background-color: rgba(225,225,225,0.3); padding: 10px;}
+div.pagearea h4{color:darkred; background-color: rgba(225,225,225,0.3); padding: 10px;}
+div.pagearea h5{color:darkred; background-color: rgba(225,225,225,0.3); padding: 10px;}
+div.pagearea h6{color:darkred; background-color: rgba(225,225,225,0.3); padding: 10px;}
+
+/*Main Area - Title*/
+
+div.mainareatitle {
+    background-color: rgba(128,32,32,0.3);
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+div.mainareatitle *{
+    color: white;
+    margin: 0em;
+    padding: 0em;
+}
+
+div.mainareaaction {
+    background-color: rgba(32,128,32,0.3);
+}
+
+div.mainareaaction {
+    font-weight: bold;
+}
+
+/*Main Area - Hint*/
+
+div.hint {
+    background-color: rgba(32,128,32,0.3);;
+    text-align: center;
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*Main Area - Book Title Item*/
+
+div.booktitlecontainer {
+    padding-top:20px;
+}
+
+div.booktitle > div {
+    display: table-cell;
+}
+
+img.booktitleimg {
+    height: 2em;
+}
+
+div.booktitletextarea {
+    vertical-align: top; 
+    padding-top: 0.5em; 
+    padding-right: 0.5em; 
+}
+
+div.booktitlechilds {
+    display: block;
+}
+
+img.booktitleloadimg {
+    height: 3em; 
+    display: none;   
+}
+
+img.inactive {
+    opacity:0.5; filter:alpha(opacity=50);
+}
+
+/*Foot Area*/
+
+div.footerarea { 
+    text-align: center; padding: 5px;
+}
+
+a.redlink {
+    color: darkred;
+}
+
+
