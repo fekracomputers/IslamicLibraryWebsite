@@ -1,2 +1,2 @@
 # islamiclibrarywebsite
-Online Islamic Books Library bases on [shamela](www.shamel.ws) books
+Online Islamic Books Library bases on [shamela](http://www.shamela.ws) books
