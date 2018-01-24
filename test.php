@@ -12,15 +12,6 @@ generateSitemap(); die();
 
 $time = echoTime(0);
 
-if(file_exists("./data/main.sqlite")===false){
-    UtilityDB::generateMain();
-}
-else {
-    UtilityDB::syncMain();
-}
-
-$time = echoTime($time, "Initialization");
-
 print_r(UtilityDB::getCategories($bookID));
 
 $time = echoTime($time, "Home");

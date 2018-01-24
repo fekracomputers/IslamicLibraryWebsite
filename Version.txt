@@ -6,6 +6,13 @@ In config.php make sure it points correctly to data folder at books api
 Make sure that books api works correctly
 Make sure the reditrect is to home.php and not to index.php
 
+Version 2.0
+========================================
+Date: 1/26/2018
+By: Mohamed Sobh
+Notes:
+None
+
 Version 1.0
 ========================================
 Date: 1/6/2017

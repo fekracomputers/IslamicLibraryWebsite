@@ -1,0 +1,10 @@
+
+	Options +Indexes 
+	Options +FollowSymLinks 
+	Options +MultiViews
+	Order allow,deny
+	allow from all
+	ErrorDocument 400 /home.php
+	ErrorDocument 403 /home.php
+	ErrorDocument 404 /home.php
+	ErrorDocument 500 /home.php
